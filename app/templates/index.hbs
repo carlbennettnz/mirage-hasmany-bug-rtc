@@ -1,0 +1,9 @@
+<h1>Teachers</h1>
+
+<ul>
+  {{#each model as |teacher|}}
+    <li>{{teacher.name}} has {{teacher.students.length}} students</li>
+  {{/each}}
+</ul>
+
+<p>If everything is working as expected, each teacher should have 2 students.</p>
